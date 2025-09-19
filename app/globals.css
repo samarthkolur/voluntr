@@ -1,0 +1,127 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated color tokens to match Voluntr design brief */
+  --background: #edf2f4; /* Anti-Flash White background */
+  --foreground: #2b2d42; /* Space Cadet for headings */
+  --card: #ffffff; /* White cards */
+  --card-foreground: #2b2d42; /* Space Cadet text on cards */
+  --popover: rgba(255, 255, 255, 0.95);
+  --popover-foreground: #2b2d42;
+  --primary: #bf0603; /* Darker red buttons */
+  --primary-foreground: #ffffff; /* White text on red buttons */
+  --secondary: #8d99ae; /* Cool Gray for subheadings */
+  --secondary-foreground: #2b2d42;
+  --muted: #b0b0b0;
+  --muted-foreground: #2b2d42;
+  --accent: #2b2d42;
+  --accent-foreground: #ffffff;
+  --destructive: #bf0603;
+  --destructive-foreground: #ffffff;
+  --border: #d1d5db;
+  --input: #ffffff;
+  --ring: #bf0603;
+  --chart-1: #8d99ae;
+  --chart-2: #2b2d42;
+  --chart-3: #bf0603;
+  --chart-4: #b0b0b0;
+  --chart-5: #d1d5db;
+  --radius: 0.5rem;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #2b2d42;
+  --sidebar-primary: #edf2f4;
+  --sidebar-primary-foreground: #2b2d42;
+  --sidebar-accent: #bf0603;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #d1d5db;
+  --sidebar-ring: #bf0603;
+}
+
+.dark {
+  --background: #2b2d42;
+  --foreground: #edf2f4;
+  --card: #3a3d5c;
+  --card-foreground: #edf2f4;
+  --popover: #3a3d5c;
+  --popover-foreground: #edf2f4;
+  --primary: #bf0603;
+  --primary-foreground: #ffffff;
+  --secondary: #8d99ae;
+  --secondary-foreground: #edf2f4;
+  --muted: #6b7280;
+  --muted-foreground: #edf2f4;
+  --accent: #bf0603;
+  --accent-foreground: #ffffff;
+  --destructive: #bf0603;
+  --destructive-foreground: #ffffff;
+  --border: #4b5563;
+  --input: #3a3d5c;
+  --ring: #bf0603;
+  --chart-1: #8d99ae;
+  --chart-2: #edf2f4;
+  --chart-3: #bf0603;
+  --chart-4: #6b7280;
+  --chart-5: #4b5563;
+  --sidebar: #3a3d5c;
+  --sidebar-foreground: #edf2f4;
+  --sidebar-primary: #2b2d42;
+  --sidebar-primary-foreground: #edf2f4;
+  --sidebar-accent: #bf0603;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #4b5563;
+  --sidebar-ring: #bf0603;
+}
+
+@theme inline {
+  /* Updated font variables to use Poppins and Roboto */
+  --font-sans: var(--font-poppins);
+  --font-mono: var(--font-roboto);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
