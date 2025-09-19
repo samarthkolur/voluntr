@@ -17,7 +17,7 @@ export function Navigation() {
               <Heart className="w-6 h-6 text-primary-foreground fill-current" />
             </div>
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground font-sans">this is our website</span>
+              <span className="text-2xl font-bold text-foreground font-sans">this is our website1</span>
               <span className="text-xs text-secondary font-mono -mt-1">connect • Act • impact</span>
             </div>
           </Link>
